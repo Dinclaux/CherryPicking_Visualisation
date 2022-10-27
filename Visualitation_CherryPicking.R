@@ -34,9 +34,9 @@ if (!require("ggplot2")){
 #########################################################
 
 
-setwd("C:/Users/mdinclaux/Documents/Script/TWB_Robot/transfert_list_plaque/")
+setwd("C:/Users/mdinclaux/Documents/Script/TWB/CherryPicking_Visualisation/")
 
-data <- read.csv("test_MP2.csv", header = TRUE, sep = ";", dec = ".",
+data <- read.csv("Exemple_Visualisation.csv", header = TRUE, sep = ";", dec = ".",
                  stringsAsFactors = TRUE)
 
 plate_title <- "Plate 5" #Title
@@ -84,7 +84,7 @@ if(count_replicate == TRUE) {
     facet_wrap(~plate_label, ncol = ncols)+
     ggtitle(plate_title)+
     theme(legend.position= c(0.8, 0.3))+
-    labs(fill = "Nombre de réplicas")+
+    labs(fill = "Nombre de r?plicas")+
     theme(plot.title = element_text(hjust = 0.5))
 }
 
